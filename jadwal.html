@@ -1,0 +1,164 @@
+<html>
+ <head>
+  <title>
+   Jadwal Pelajaran
+  </title>
+  <style>
+   body {
+            background-color: rgb(22, 43, 70);
+            font-family: 'Arial', sans-serif;
+            color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 36px;
+            color: #FFA500;
+        }
+        .header h2 {
+            font-size: 48px;
+            color: #FFD700;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            width: 80%;
+        }
+        .grid div {
+            background-color: #F5F5DC;
+            border: 2px solid rgb(22, 43, 70);
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            color: rgb(22, 43, 70);
+        }
+        .notes {
+            grid-column: span 2;
+            background-color: #E0FFFF;
+            padding: 20px;
+            text-align: left;
+            font-size: 24px;
+            color: rgb(22, 43, 70);
+        }
+        .notes p {
+            margin: 0;
+            padding: 0;
+        }
+        .images {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .images img {
+            position: absolute;
+        }
+        .rocket1 {
+            top: 20px;
+            left: 20px;
+            width: 100px;
+        }
+        .planet {
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+        }
+        .rocket2 {
+            top: 20px;
+            right: 20px;
+            width: 100px;
+        }
+        .astronaut {
+            bottom: 20px;
+            left: 20px;
+            width: 100px;
+        }
+        .earth {
+            bottom: 20px;
+            right: 20px;
+            width: 100px;
+        }
+        .moon {
+            top: 20px;
+            right: 150px;
+            width: 100px;
+        }
+        .satellite {
+            bottom: 20px;
+            right: 150px;
+            width: 100px;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="header">
+    <h1>
+     JADWAL
+    </h1>
+    <h2>
+     PELAJARAN
+    </h2>
+   </div>
+   <div class="grid">
+    <div>
+     SENIN:
+
+     <p>PPKN</p>
+     <p>B.Inggris</p>
+     <p>Tik</p>
+    </div>
+    <div>
+     SELASA:
+
+     <p>Agama</p>
+     <p>Mtk</p>
+     <p>ipa</p>
+     <p>Ips</p>
+    </div>
+    <div>
+     RABU:
+
+     <p>PJOK</p>
+     <p>B.indo</p>
+     <p>Bk</p>
+     <p>B.inggris</p>
+    </div>
+    <div>
+     KAMIS:
+
+     <p>Seni budaya</p>
+     <p>Ips</p>
+     <p>Bahasa bali</p>
+     <p>B.indo</p>
+    </div>
+    <div>
+     JUMAT:
+
+     <p>Ipa</p>
+     <p>Mtk</p>
+    </div>
+    <div>
+      Sabtu:
+      
+      <p>Ekstra</p>
+   </div>
+  </div>
+  
+ </body>
+</html>

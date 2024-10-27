@@ -1,0 +1,20 @@
+body {
+    background: rgb(22, 43, 70);
+    background-blend-mode: multiply;
+    background-position: unset;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.body2{
+    background: rgb(22, 43, 70);
+}
+
+.body1{
+    background: rgb(22, 43, 70);
+}
+
+.text{
+    color: white;
+}
+

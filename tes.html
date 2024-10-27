@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Kirim Email</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4CAF50; /* Warna tombol */
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049; /* Warna gelap saat hover */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Kirim Email</h2>
+    <form id="emailForm" onsubmit="return sendEmail()">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Pesan:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Kirim Email</button>
+    </form>
+
+    <script>
+        function sendEmail() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            const subject = encodeURIComponent(`Pesan dari ${name}`);
+            const body = encodeURIComponent(`Nama: ${name}\nEmail: ${email}\nPesan:\n${message}`);
+            const mailtoLink = `mailto:kadek.asahi@gmail.com?subject=${subject}&body=${body}`; // Ganti dengan alamat email tujuan
+
+            window.location.href = mailtoLink;
+
+           
+        }
+    </script>
+
+</body>
+</html>
